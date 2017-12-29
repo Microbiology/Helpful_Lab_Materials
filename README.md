@@ -8,6 +8,8 @@ Create your letter by following the template provided by the example letter `cov
 bash ./renderletter
 ```
 
+See the final (example) product [here](https://github.com/Microbiology/PandocAcademicCoverLetter/blob/master/coverletter.pdf)
+
 # Dependencies
 This tool is pretty light on dependencies. All you need is to have Pandoc running on your computer. Don't yet have Pandoc? Follow the installation instructions [here](https://pandoc.org/installing.html).
 
