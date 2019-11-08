@@ -20,7 +20,10 @@
 
 \usepackage{fontspec}
 \defaultfontfeatures{Mapping=tex-text}  % Sets quotation marks.
-\setromanfont{Times}
+% avoid Italic to be BoldItalic
+\setmainfont{Times}[ItalicFont    ={* Italic},    
+                    BoldFont      ={* Bold},    
+                    BoldItalicFont={* Bold Italic}]  
 \setsansfont[BoldFont={Helvetica Neue Bold}]{Helvetica Neue}
 \setmonofont[Scale=MatchLowercase]{Helvetica}
 
@@ -37,7 +40,7 @@
         \vspace{-0.375in}
         \parbox[b][0.625in][t]{3.74in}
             {\href{http://www.umich.edu}
-            {\includegraphics[height=1in]{./Michigan.pdf}}}\hfill
+            {\includegraphics[height=1in]{$head.logo$}}}\hfill
         \parbox[b][0.625in][t]{2in}{
             \setlength{\baselineskip}{9pt}
             \fontsize{7pt}{7pt}{
@@ -57,6 +60,8 @@
 $if(draft)$
 \usepackage{draftwatermark}
 \SetWatermarkLightness{0.9}
+$else$
+\usepackage{graphicx}
 $endif$
 
 \begin{document}
@@ -75,7 +80,7 @@ $if(sig.include)$
     \vspace{0.1in}
 
     $if(sig.sign)$
-        \vspace{-0.2in}\includegraphics[height=0.5in]{./Signature.pdf}
+        \vspace{-0.2in}\includegraphics[height=0.5in]{$sig.file$}
     $else$
         \\
     $endif$
