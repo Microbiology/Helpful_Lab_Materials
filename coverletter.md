@@ -1,6 +1,6 @@
 ---
 size: 11pt
-draft: no
+draft: true
 head:
     address: '123 Research Ave, Science Building 2'
     city: Cambridge
@@ -10,11 +10,13 @@ head:
     fax: '\(999\) 555-6565'
     email: 'hannigan@gmail.com'
     dept: "Microbiology & Bioinformatics"
+    logo: "Michigan.pdf"
 sig:
- include: yes
- sign: yes
+ include: true
+ sign: true
  name: 'Geoffrey Hannigan, PhD'
  post: Bioinformatics Scientist
+ file: "Signature.pdf"
  secondpost: Distinguished Second Appointment
 ---
 
