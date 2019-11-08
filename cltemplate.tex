@@ -20,7 +20,8 @@
 
 \usepackage{fontspec}
 \defaultfontfeatures{Mapping=tex-text}  % Sets quotation marks.
-% avoid Italic to be BoldItalic
+% avoid Italic to be BoldItalic on macos High Sierra and later
+% [Italic went rogue in my document: what happened?](https://tex.stackexchange.com/questions/395645/italic-went-rogue-in-my-    document-what-happened)
 \setmainfont{Times}[ItalicFont    ={* Italic},    
                     BoldFont      ={* Bold},    
                     BoldItalicFont={* Bold Italic}]  
