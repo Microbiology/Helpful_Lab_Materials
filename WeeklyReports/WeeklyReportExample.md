@@ -21,10 +21,6 @@ I did some more phage hunting with Pat's animal fecal samples. Long story short,
 
 * Akkermansia (genus)
 
-## *C diff* Virome Dynamics in mice
-
-I started the ~3 week long mouse experiment in which I am taking a stool sample every 12 hours for 5 days before and after C diff infection. Not a whole lot to report for now, other than that it is underway and I pray I do not have a problem with C diff infection contamination when the time comes.
-
 ## Phage-Bacteria Interaction Prediction
 
 My script for predicting phage - bacteria associations using my protein network database is coming along nicely in my "down time". Right now I tried running it on my laptop because it is easier and I have the needed permissions, but I need to move it over to FLUX. Unfortunately I am having problems with the permissions so that is still a work in progress.
